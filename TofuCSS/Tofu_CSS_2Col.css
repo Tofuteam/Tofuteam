@@ -1,0 +1,134 @@
+
+@font-face{
+	font-family:  "Hiragino Kaku Gothic ProN", "游ゴシック", YuGothic, Meiryo, sans-serif;
+
+}
+
+/* --- 全体の背景・テキスト --- */
+body {
+margin: 0;
+padding: 0;
+background-color: #ffffff; /* ページの背景色 */
+color: #000000; /* 全体の文字色 */
+font-size: 100%; /* 全体の文字サイズ */
+}
+
+/* --- 全体のリンクテキスト --- */
+a:link { color: #0000ff; }
+a:visited { color: #800080; }
+a:hover { color: #ff0000; }
+a:active { color: #ff0000; }
+/* --- コンテナ --- */
+
+#container {
+width: auto; /* ページの幅 */
+margin: 0 auto; /* センタリング */
+background-color: #ffffff; /* メインカラムの背景色 */
+border-left: 0px #c0c0c0 solid; /* 左の境界線 */
+border-right: 0px #c0c0c0 solid; /* 右の境界線 */
+}
+
+/* --- ヘッダ --- */
+#header {
+font-family: 'Chewy', cursive;
+/*background-image: url("../Design_pics/title_bar.jpeg"); /* ヘッダの背景色 */
+height: 5%;
+font-size: 35px;
+padding-left: 5%;
+padding-top: 1.5%;
+
+}
+#letter_color{
+	color: #00FFFF
+}
+#top_icon{
+	width: 30%;
+	height: 30%;
+	float: right;
+	padding-right: 20px;
+}
+
+#menu {
+	width:55%;
+	padding-top: 2%;
+	padding-right: 8%;
+	margin: 0;
+	list-style-type: none;
+	float: right;
+}
+
+
+#menu li {
+  width:20%;
+  float:left;
+  padding:0;
+  margin:0;
+  text-align:center;
+  background-color: #222222;
+  display: inline;
+  width: 25%;
+}
+#menu li a {
+  width:auto;
+  color:#000;
+  font-size:24px;
+  font-weight:bold;
+  padding:10px 0;
+  text-decoration:none;
+  display:block;
+  background:#ffffff;
+  
+}
+#menu li a:hover {
+  background:#555;
+}
+
+
+
+ul#submenu_body li {
+	font-size:90%;			/*文字サイズを90%にする*/
+	list-style-type:none;		/*リストマーカー無しにする*/
+	display:inline;			/*リスト項目をインライン表示にする*/
+}
+ul#submenu_body li a {
+	display:block;			/*リンクをブロック表示にする*/
+	margin:0px 4px 0px 4px;		/*サブメニュー項目のマージン*/
+	padding:2px 0px 2px 20px;	/*サブメニュー項目のパディング*/
+	background-color:#eeeeee;	/*サブメニュー項目の背景色*/
+	text-decoration:none;		/*リンクの下線を無くす*/
+}
+ul#submenu_body li a:hover {
+	background-color:#ffffff;	/*リンクにマウスが乗ったら色を変える*/
+}
+
+/* --- メインカラム --- */
+#content {
+float: left;
+height: 100%;
+
+width: 100%; /* メインカラムの幅 */
+padding-top: 1%;
+padding-left: 0px;
+background-image: url("../Design_pics/washiback2.jpg");
+background-repeat: no-repeat;
+background-position: left;
+
+}
+#tofu_icon{
+top: 10%;
+right: 5%;
+bottom: 10%;
+position: fixed;
+z-index: 1;
+	
+}
+#content_text{
+	font-size:100%;
+	padding-left: 5%;
+}
+/* --- フッタ --- */
+#footer {
+clear: left; /* フロートのクリア */
+width: 100%;
+background-color: #CCFFFF; /* フッタの背景色 */
+}

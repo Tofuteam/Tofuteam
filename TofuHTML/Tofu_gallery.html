@@ -1,0 +1,81 @@
+<html>
+
+<head>
+<link rel="stylesheet" type="text/css" href="./TofuCSS/Tofu_gallery.css">
+<link rel="stylesheet" href="../css/flexslider.css" type="text/css" />
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script type="text/javascript" src="../js/jquery.flexslider.js"></script>
+
+
+<script type="text/javascript">
+
+$(window).load(function() {
+	$('#flexslider-cs').flexslider({
+        animation: "slide",
+        controlNav: false,
+        animationLoop: false,
+        slideshow: false,
+        sync: "#flexslider-carousel"
+		});
+	
+	
+    $('#flexslider-carousel').flexslider({
+        animation: "slide",
+        controlNav: false,
+        animationLoop: false,
+        slideshow: false,
+        itemWidth: 223,
+        itemMargin: 5,
+        minItems: 2,
+        maxItems: 4,
+        asNavFor: '#flexslider-cs'
+    });
+
+});
+</script>
+
+<title>とうふギャラリー</title>
+</head>
+
+<body>
+
+<div class="flexslider" id="flexslider-cs">
+  <ul class="slides"><!-- 必ずクラスは slides -->
+    <li>
+      <img src="../Tofugal/DSC_0180.jpg" width="800" heigth="600" />
+    </li>
+    <li>
+      <img src="../Tofugal/DSC_0503.jpg" width="800" heigth="600"/>
+    </li>
+    <li>
+      <img src="../Tofugal/DSC_0578.jpg" width="800" heigth="600"/>
+    </li>
+	<li>
+      <img src="../Tofugal/DSC_0578.jpg" width="800" heigth="600"/>
+    </li>
+	<li>
+      <img src="../Tofugal/DSC_0578.jpg" width="800" heigth="600"/>
+    </li>
+  </ul>
+</div>
+<div class="flexslider" id="flexslider-carousel">
+  <ul class="slides"><!-- 必ずクラスは slides -->
+    <li>
+      <img src="../Tofugal/DSC_0180.jpg" width="320" heigth="210" />
+    </li>
+    <li>
+      <img src="../Tofugal/DSC_0503.jpg" width="320" heigth="210"/>
+    </li>
+    <li>
+      <img src="../Tofugal/DSC_0578.jpg" width="320" heigth="210"/>
+    </li>
+	<li>
+      <img src="../Tofugal/DSC_0578.jpg" width="320" heigth="210"/>
+    </li>
+	<li>
+      <img src="../Tofugal/DSC_0578.jpg" width="320" heigth="210"/>
+    </li>
+  </ul>
+</div>
+</body>
+</html>
