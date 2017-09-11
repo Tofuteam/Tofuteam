@@ -30,13 +30,14 @@ border-right: 0px #c0c0c0 solid; /* 右の境界線 */
 
 /* --- ヘッダ --- */
 #header {
-width:960px;
+width:100%;
 font-family: 'Chewy', cursive;
 /*background-image: url("../Design_pics/title_bar.jpeg"); /* ヘッダの背景色 */
 height: 5%;
-font-size: 35px;
-padding-left: 0%;
-padding-top: 1.5%;
+font-size: 20px;
+padding-left: 10%;
+padding-right: 0%;
+padding-top: 10%;
 padding-bottom:1.5%;
 margin: 0 auto;  
 }
@@ -53,8 +54,9 @@ margin: 0 auto;
 }
 
 #menu {
-	padding-top: 0%;
-	padding-right: 100px;
+	padding-top: 0px;
+	padding-right: 20%;
+	
 	margin: 0;
 	list-style-type: none;
 	float: right;
@@ -76,14 +78,14 @@ float: left;
 
 #menu li a{
 display: block; 
-border-left: 8px solid #ffffff;
+border-left: 1px solid #ffffff;
 background-color: #FFFFFF;
-padding: 0px 15px;
+padding: 0px 4px;
 text-decoration: none;
 color: #000000;
 margin: 1px 0px;
 text-align: left;
-font-size: 25px;
+font-size: 18px;
 }
 #menu li a:hover{
 border-left: 8px solid #00FFFF;
@@ -91,7 +93,7 @@ background-color: #FFFFFF;
 }
 
 ul#submenu_body li {
-	font-size:90%;			/*文字サイズを90%にする*/
+	font-size:15px;			/*文字サイズを90%にする*/
 	list-style-type:none;		/*リストマーカー無しにする*/
 	display:inline;			/*リスト項目をインライン表示にする*/
 }
@@ -113,7 +115,7 @@ ul#submenu_body li a:hover {
 
 height: 100%;
 margin: 0 auto;  
-width: 960px; /* メインカラムの幅 */
+width: 100%; /* メインカラムの幅 */
 padding-top: 1%;
 padding-left: 0px;
 background-image: url("../Design_pics/washiback2.jpg");
@@ -123,15 +125,15 @@ background-position: left;
 }
 
 #tofu_icon{
-right: 200px;
-bottom: 10px;
+right: 10px;
+bottom: 300px;
 position: fixed;
 z-index: 1;
 	
 }
 
 #content_text{
-	font-size:100%;
+	font-size:12px;
 	padding-left: 5%;
 }
 /* --- フッタ --- */

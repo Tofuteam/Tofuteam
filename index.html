@@ -3,23 +3,26 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <link href="https://fonts.googleapis.com/css?family=Chewy" rel="stylesheet">
-<link rel="stylesheet" type="text/css" href="./TofuCSS/Tofu_CSS_2Col.css">
+<link rel="stylesheet" type="text/css" media="(min-width: 640px)" href="./TofuCSS/Tofu_CSS_2Col.css">
 <link rel="stylesheet" href="./css/flexslider.css" type="text/css" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="./css/fakeLoader.css">
+<link rel="stylesheet" media="(max-width: 640px)" href="./TofuCSS/Tofu_CSS_2Col_smartphone.css">
 
 
 <div id="fakeLoader"></div>
     <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
     <script src="./js/fakeLoader.min.js"></script>
     <script>
+	if(!navigator.userAgent.match(/(iPhone|android|iPad)/)){
      $("#fakeLoader").fakeLoader({
-       timeToHide:1800, //Time in milliseconds for fakeLoader disappear
+       timeToHide:1400, //Time in milliseconds for fakeLoader disappear
        zIndex:999, // Default zIndex
        spinner:"spinner1",//Options: 'spinner1', 'spinner2', 'spinner3', 'spinner4', 'spinner5', 'spinner6', 'spinner7'
        bgColor:"#ffffff", //Hex, RGB or RGBA colors
        imagePath:"./Tofugif/tofugif.gif" //If you want can you insert your custom image
      });
+	 }
     </script>
 
 <title>とうふウェブ</title>
@@ -68,7 +71,7 @@ $(window).load(function() {
 
 </div>
 <div id="tofu_icon">
-<img src="./Design_pics/tofu_icon2.png" width="1000px" height="1050px"/>
+<img src="./Design_pics/tofu_icon2.png" width="200px" height="250px"/>
 </div>
 <h2>
 
